@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Multisubject, multimodal face processing",
   "license": "CC0",
   "dataset_type": "raw",
@@ -12,7 +12,7 @@
     {
       "identifier": "10.18112/openneuro.ds000117.v1.1.0",
       "identifier_type": "DOI",
-      "relation_type": "IsDerivedFrom"
+      "relation_type": "IsIdenticalTo"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on000117",
@@ -61,7 +61,6 @@
     ".fif",
     ".gz",
     ".json",
-    ".md",
     ".mgz",
     ".nii",
     ".pial",
@@ -72,11 +71,14 @@
     ".white",
     ".yml"
   ],
-  "description": "A multimodal neuroimaging dataset comprising structural MRI, functional MRI, MEG, and EEG recordings from 16 subjects during a face recognition task. The dataset includes presentations of famous faces, unfamiliar faces, and scrambled faces with immediate and delayed repetitions, designed to investigate neural mechanisms of face processing across multiple imaging modalities.",
-  "methods_description": "Data were collected using multimodal neuroimaging including structural MRI (MPRAGE T1), functional MRI, MEG with digitized anatomical fiducials (nasion and bilateral ears), and EEG. The face recognition task involved presentation of famous faces, unfamiliar faces, and scrambled faces with three repetition conditions (initial, immediate repeat, delayed repeat). MEG triggers encoded stimulus categories and repetition status.",
+  "description": "A multimodal neuroimaging dataset comprising structural MRI, functional MRI, MEG, EEG, and diffusion-weighted imaging from 16 subjects performing a face recognition task. This is a curated subset of the original 19-subject dataset (subjects 01, 06, and 19 from the original cohort were excluded due to data quality issues, particularly poor EEG data). The remaining 16 subjects were selected to provide high-quality multimodal data for integration studies. The dataset includes anatomical images with defacing applied, blood oxygen level-dependent functional scans, magnetoencephalography recordings with digitized fiducials for co-registration, electroencephalography data, and diffusion-weighted imaging. This resource is designed to facilitate multimodal neuroimaging analysis and integration methods development.",
+  "methods_description": "Data collection involved multiple imaging modalities: structural T1-weighted MPRAGE sequences (with defacing applied), task-based fMRI during face processing, MEG recordings with three anatomical fiducials (nasion and bilateral ears) digitized for MRI-MEG alignment, and EEG recordings. The face recognition task included presentations of famous faces, unfamiliar faces, and scrambled faces in initial and repeated conditions with varying delays.",
   "keywords": [
     {
       "term": "face recognition"
+    },
+    {
+      "term": "multimodal neuroimaging"
     },
     {
       "term": "MEG"
@@ -88,11 +90,32 @@
       "term": "fMRI"
     },
     {
-      "term": "multimodal neuroimaging"
+      "term": "structural MRI"
     },
     {
-      "term": "visual processing"
+      "term": "brain imaging"
+    },
+    {
+      "term": "task-based fMRI"
+    },
+    {
+      "term": "face processing"
+    },
+    {
+      "term": "multimodal integration"
+    },
+    {
+      "term": "diffusion-weighted imaging"
+    },
+    {
+      "term": "DWI"
+    },
+    {
+      "term": "defacing"
+    },
+    {
+      "term": "face stimuli"
     }
   ],
-  "source_hash": "89761ac4bb624d195715367c8571edf1b19c35362372be0ba8e7a7f8e870d7e0"
+  "source_hash": "68ad3e7b7afe06e3b05eb106031e530cb16ea06eb1695373778e1351a7d1a2b5"
 }
