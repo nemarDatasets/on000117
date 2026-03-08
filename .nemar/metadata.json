@@ -72,14 +72,14 @@
     ".white",
     ".yml"
   ],
-  "description": "A multimodal neuroimaging dataset comprising structural MRI, functional MRI, MEG, and EEG recordings from 16 subjects during a face recognition task. The dataset includes three stimulus categories (famous faces, unfamiliar faces, and scrambled faces) presented in initial and repeated conditions, enabling investigation of neural mechanisms underlying face processing and repetition effects across multiple imaging modalities.",
-  "methods_description": "Data were acquired using a multi-modal protocol including high-resolution structural MRI (MPRAGE), blood oxygen level-dependent fMRI, MEG recordings with digitized anatomical fiducials (nasion and bilateral ears), and EEG. MEG-MRI alignment was performed using three anatomical fiducials. The fMRI task involved presentation of famous faces, unfamiliar faces, and scrambled faces in initial and repeated (immediate and delayed) conditions with corresponding trigger codes recorded in MEG/EEG data.",
+  "description": "A multimodal neuroimaging dataset comprising structural MRI, functional MRI, MEG, and EEG recordings from 16 subjects during a face recognition task. The dataset includes presentations of famous faces, unfamiliar faces, and scrambled faces with immediate and delayed repetitions, designed to investigate neural mechanisms of face processing across multiple imaging modalities.",
+  "methods_description": "Data were acquired using multimodal neuroimaging including structural MRI (MPRAGE T1), functional MRI, MEG with digitized anatomical fiducials (nasion and bilateral ears), and EEG. The face recognition task involved presentation of famous faces, unfamiliar faces, and scrambled faces with three repetition conditions (initial, immediate repeat, delayed repeat). MEG and EEG data include event triggers corresponding to stimulus categories.",
   "keywords": [
     {
       "term": "face recognition"
     },
     {
-      "term": "fMRI"
+      "term": "multimodal neuroimaging"
     },
     {
       "term": "MEG"
@@ -88,13 +88,13 @@
       "term": "EEG"
     },
     {
-      "term": "multimodal neuroimaging"
+      "term": "fMRI"
     },
     {
       "term": "structural MRI"
     },
     {
-      "term": "repetition priming"
+      "term": "visual processing"
     }
   ],
   "source_hash": "89761ac4bb624d195715367c8571edf1b19c35362372be0ba8e7a7f8e870d7e0"
