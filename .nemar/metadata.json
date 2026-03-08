@@ -1,0 +1,21 @@
+{
+  "version": "2.0",
+  "dataset_id": "on000117",
+  "source": "openneuro",
+  "source_id": "ds000117",
+  "title": "Multisubject, multimodal face processing",
+  "authors": {
+    "Wakeman, DG": {},
+    "Henson, RN": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds000117.v1.1.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded"
+}
