@@ -73,13 +73,10 @@
     ".yml"
   ],
   "description": "A multimodal neuroimaging dataset comprising structural MRI, functional MRI, MEG, and EEG recordings from 16 subjects during a face recognition task. The dataset includes presentations of famous faces, unfamiliar faces, and scrambled faces with immediate and delayed repetitions, designed to investigate neural mechanisms of face processing across multiple imaging modalities.",
-  "methods_description": "Data were acquired using multimodal neuroimaging including structural MRI (MPRAGE T1), functional MRI, MEG with digitized anatomical fiducials (nasion and bilateral ears), and EEG. The face recognition task involved presentation of famous faces, unfamiliar faces, and scrambled faces with three repetition conditions (initial, immediate repeat, delayed repeat). MEG and EEG data include event triggers corresponding to stimulus categories.",
+  "methods_description": "Data were collected using multimodal neuroimaging including structural MRI (MPRAGE T1), functional MRI, MEG with digitized anatomical fiducials (nasion and bilateral ears), and EEG. The face recognition task involved presentation of famous faces, unfamiliar faces, and scrambled faces with three repetition conditions (initial, immediate repeat, delayed repeat). MEG triggers encoded stimulus categories and repetition status.",
   "keywords": [
     {
       "term": "face recognition"
-    },
-    {
-      "term": "multimodal neuroimaging"
     },
     {
       "term": "MEG"
@@ -91,7 +88,7 @@
       "term": "fMRI"
     },
     {
-      "term": "structural MRI"
+      "term": "multimodal neuroimaging"
     },
     {
       "term": "visual processing"
