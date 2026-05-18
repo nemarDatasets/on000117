@@ -1,78 +1,15 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Multisubject, multimodal face processing",
+  "description": "A multimodal neuroimaging dataset comprising structural MRI, functional MRI, MEG, and EEG recordings from 16 subjects performing a face recognition task. The dataset includes anatomical and functional brain imaging alongside electrophysiological recordings during repeated presentations of famous, unfamiliar, and scrambled faces, designed to investigate multimodal integration of neuroimaging data in face processing.",
+  "methods_description": "Data collection involved simultaneous or sequential acquisition of sMRI (MPRAGE T1 images), fMRI, MEG, and EEG during a face recognition task with three stimulus categories (famous, unfamiliar, scrambled faces) presented in initial and repeated conditions. MEG-MRI alignment was performed using three digitized anatomical fiducials (nasion and bilateral ears). fMRI preprocessing included removal of dummy volumes; MEG data included trigger codes for stimulus categorization.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
     "Wakeman, DG": {},
     "Henson, RN": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds000117.v1.1.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on000117",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on000117",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1038/sdata.2015.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "funding_references": [
-    {
-      "funder_name": "UK Medical Research Council",
-      "award_number": "SUAG/010 RG91365"
-    },
-    {
-      "funder_name": "Elekta Ltd."
-    }
-  ],
-  "modalities": [
-    "anat",
-    "meg",
-    "func",
-    "beh",
-    "dwi",
-    "fmap"
-  ],
-  "resource_type_specific": "Structural MRI Dataset",
-  "sizes": [
-    "181.9 GB (1988 files)"
-  ],
-  "formats": [
-    ".annot",
-    ".bmp",
-    ".bval",
-    ".bvec",
-    ".dat",
-    ".f3h5wZ",
-    ".fif",
-    ".gz",
-    ".json",
-    ".mgz",
-    ".nii",
-    ".pial",
-    ".pos",
-    ".reg",
-    ".tsv",
-    ".txt",
-    ".white",
-    ".yml"
-  ],
-  "description": "A multimodal neuroimaging dataset comprising structural MRI, functional MRI, MEG, EEG, and diffusion-weighted imaging from 16 subjects performing a face recognition task. This is a curated subset of the original 19-subject dataset (subjects 01, 06, and 19 from the original cohort were excluded due to data quality issues, particularly poor EEG data). The remaining 16 subjects were selected to provide high-quality multimodal data for integration studies. The dataset includes anatomical images with defacing applied, blood oxygen level-dependent functional scans, magnetoencephalography recordings with digitized fiducials for co-registration, electroencephalography data, and diffusion-weighted imaging. This resource is designed to facilitate multimodal neuroimaging analysis and integration methods development.",
-  "methods_description": "Data collection involved multiple imaging modalities: structural T1-weighted MPRAGE sequences (with defacing applied), task-based fMRI during face processing, MEG recordings with three anatomical fiducials (nasion and bilateral ears) digitized for MRI-MEG alignment, and EEG recordings. The face recognition task included presentations of famous faces, unfamiliar faces, and scrambled faces in initial and repeated conditions with varying delays.",
   "keywords": [
     {
       "term": "face recognition"
@@ -94,28 +31,71 @@
     },
     {
       "term": "brain imaging"
-    },
-    {
-      "term": "task-based fMRI"
-    },
-    {
-      "term": "face processing"
-    },
-    {
-      "term": "multimodal integration"
-    },
-    {
-      "term": "diffusion-weighted imaging"
-    },
-    {
-      "term": "DWI"
-    },
-    {
-      "term": "defacing"
-    },
-    {
-      "term": "face stimuli"
     }
   ],
-  "source_hash": "68ad3e7b7afe06e3b05eb106031e530cb16ea06eb1695373778e1351a7d1a2b5"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on000117",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on000117",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/sdata.2015.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds000117.v1.1.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "UK Medical Research Council",
+      "award_number": "SUAG/010 RG91365"
+    },
+    {
+      "funder_name": "Elekta Ltd."
+    }
+  ],
+  "resource_type_specific": "Structural MRI Dataset",
+  "modalities": [
+    "anat",
+    "meg",
+    "func",
+    "beh",
+    "dwi",
+    "fmap"
+  ],
+  "sizes": [
+    "181.9 GB (1988 files)"
+  ],
+  "formats": [
+    ".annot",
+    ".bmp",
+    ".bval",
+    ".bvec",
+    ".dat",
+    ".f3h5wZ",
+    ".fif",
+    ".gz",
+    ".json",
+    ".md",
+    ".mgz",
+    ".nii",
+    ".pial",
+    ".pos",
+    ".reg",
+    ".tsv",
+    ".txt",
+    ".white",
+    ".yml"
+  ],
+  "source_hash": "89761ac4bb624d195715367c8571edf1b19c35362372be0ba8e7a7f8e870d7e0"
 }
