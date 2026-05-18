@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Multisubject, multimodal face processing",
-  "description": "A multimodal neuroimaging dataset comprising structural MRI, functional MRI, MEG, and EEG recordings from 16 subjects performing a face recognition task. The dataset includes anatomical and functional brain imaging alongside electrophysiological recordings during repeated presentations of famous, unfamiliar, and scrambled faces, designed to investigate multimodal integration of neuroimaging data in face processing.",
-  "methods_description": "Data collection involved simultaneous or sequential acquisition of sMRI (MPRAGE T1 images), fMRI, MEG, and EEG during a face recognition task with three stimulus categories (famous, unfamiliar, scrambled faces) presented in initial and repeated conditions. MEG-MRI alignment was performed using three digitized anatomical fiducials (nasion and bilateral ears). fMRI preprocessing included removal of dummy volumes; MEG data included trigger codes for stimulus categorization.",
+  "description": "A multimodal neuroimaging dataset comprising structural MRI, functional MRI, MEG, and EEG recordings from 16 subjects during a face recognition task. The dataset includes three stimulus categories (famous faces, unfamiliar faces, and scrambled faces) presented in initial and repeated conditions, enabling investigation of neural mechanisms underlying face processing and repetition effects across multiple imaging modalities.",
+  "methods_description": "Data were acquired using a multi-modal protocol including high-resolution structural MRI (MPRAGE), blood oxygen level-dependent fMRI, MEG recordings with digitized anatomical fiducials (nasion and bilateral ears), and EEG. MEG-MRI alignment was performed using three anatomical fiducials. The fMRI task involved presentation of famous faces, unfamiliar faces, and scrambled faces in initial and repeated (immediate and delayed) conditions with specific trigger codes for each stimulus category.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -15,7 +15,7 @@
       "term": "face recognition"
     },
     {
-      "term": "multimodal neuroimaging"
+      "term": "fMRI"
     },
     {
       "term": "MEG"
@@ -24,13 +24,13 @@
       "term": "EEG"
     },
     {
-      "term": "fMRI"
+      "term": "multimodal neuroimaging"
     },
     {
       "term": "structural MRI"
     },
     {
-      "term": "brain imaging"
+      "term": "repetition priming"
     }
   ],
   "related_identifiers": [
