@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Multisubject, multimodal face processing",
-  "description": "This dataset comprises multi-subject, multi-modal neuroimaging data (structural MRI, fMRI, MEG, and EEG) collected during a face recognition task, in which participants viewed famous, unfamiliar, and scrambled faces. It is a BIDS-formatted subset of the original Wakeman & Henson dataset, designed to support methods development for multimodal integration of M/EEG and MRI data. The dataset has been widely used in neuroimaging methods research and data competitions.",
-  "methods_description": "Participants underwent MRI, fMRI, MEG, and EEG sessions while performing a face recognition task involving famous, unfamiliar, and scrambled faces presented as initial, immediately repeated, or delayed repeated stimuli. Three anatomical fiducials (nasion and bilateral pre-auricular points) were digitized for MEG-MRI coregistration. Structural MPRAGE T1 images were defaced prior to sharing, and mriqc was used for quality control of the imaging data.",
+  "description": "This dataset comprises multi-subject, multimodal neuroimaging data (structural MRI, fMRI, MEG, and EEG) collected during a face processing task, in which participants viewed famous, unfamiliar, and scrambled faces presented under initial, immediate repeat, and delayed repeat conditions. It is a BIDS-formatted subset of the original Wakeman & Henson (2015) dataset, designed to support research on multimodal integration of brain imaging data and studies of face recognition and repetition effects.",
+  "methods_description": "MEG data were collected with three digitized anatomical fiducials (nasion, left and right ears) for MRI co-registration. Task events were marked using triggers corresponding to famous, unfamiliar, and scrambled faces under initial, immediate repeat, and delayed repeat presentation conditions, recorded in both MEG and fMRI event files. T1-weighted MPRAGE structural images were defaced by the submitters. Quality control was performed using MRIQC.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,13 +21,18 @@
       "term": "fMRI"
     },
     {
-      "term": "Face Recognition"
+      "term": "face processing"
+    },
+    {
+      "term": "Facial Recognition",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000066499"
     },
     {
       "term": "multimodal neuroimaging"
     },
     {
-      "term": "face processing"
+      "term": "BIDS"
     }
   ],
   "related_identifiers": [
