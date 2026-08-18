@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Multisubject, multimodal face processing",
-  "description": "A multimodal neuroimaging dataset comprising structural MRI, functional MRI, MEG, and EEG recordings from 16 subjects during a face recognition task. The dataset includes three stimulus categories (famous faces, unfamiliar faces, and scrambled faces) presented in initial and repeated conditions, enabling investigation of neural mechanisms underlying face processing and repetition effects across multiple imaging modalities.",
-  "methods_description": "Data were acquired using a multi-modal protocol including high-resolution structural MRI (MPRAGE), blood oxygen level-dependent fMRI, MEG recordings with digitized anatomical fiducials (nasion and bilateral ears), and EEG. MEG-MRI alignment was performed using three anatomical fiducials. The fMRI task involved presentation of famous faces, unfamiliar faces, and scrambled faces in initial and repeated (immediate and delayed) conditions with specific trigger codes for each stimulus category.",
+  "description": "This dataset comprises multi-subject, multi-modal neuroimaging data (structural MRI, fMRI, MEG, and EEG) collected during a face recognition task, in which participants viewed famous, unfamiliar, and scrambled faces. It is a BIDS-formatted subset of the original Wakeman & Henson dataset, designed to support methods development for multimodal integration of M/EEG and MRI data. The dataset has been widely used in neuroimaging methods research and data competitions.",
+  "methods_description": "Participants underwent MRI, fMRI, MEG, and EEG sessions while performing a face recognition task involving famous, unfamiliar, and scrambled faces presented as initial, immediately repeated, or delayed repeated stimuli. Three anatomical fiducials (nasion and bilateral pre-auricular points) were digitized for MEG-MRI coregistration. Structural MPRAGE T1 images were defaced prior to sharing, and mriqc was used for quality control of the imaging data.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -12,35 +12,27 @@
   },
   "keywords": [
     {
-      "term": "face recognition"
-    },
-    {
-      "term": "fMRI"
+      "term": "EEG"
     },
     {
       "term": "MEG"
     },
     {
-      "term": "EEG"
+      "term": "fMRI"
+    },
+    {
+      "term": "Face Recognition"
     },
     {
       "term": "multimodal neuroimaging"
     },
     {
-      "term": "structural MRI"
-    },
-    {
-      "term": "repetition priming"
+      "term": "face processing"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on000117",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on000117",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -53,6 +45,11 @@
       "identifier": "10.18112/openneuro.ds000117.v1.1.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on000117",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -64,14 +61,14 @@
       "funder_name": "Elekta Ltd."
     }
   ],
-  "resource_type_specific": "Structural MRI Dataset",
+  "resource_type_specific": "Neuroimaging Dataset",
   "modalities": [
-    "anat",
-    "meg",
-    "func",
     "beh",
+    "meg",
+    "anat",
     "dwi",
-    "fmap"
+    "fmap",
+    "func"
   ],
   "sizes": [
     "181.9 GB (1988 files)"
