@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Multisubject, multimodal face processing",
-  "description": "This dataset comprises multi-subject, multimodal neuroimaging data (structural MRI, fMRI, MEG, and EEG) collected during a face processing task, in which participants viewed famous, unfamiliar, and scrambled faces presented under initial, immediate repeat, and delayed repeat conditions. It is a BIDS-formatted subset of the original Wakeman & Henson (2015) dataset, designed to support research on multimodal integration of brain imaging data and studies of face recognition and repetition effects.",
-  "methods_description": "MEG data were collected with three digitized anatomical fiducials (nasion, left and right ears) for MRI co-registration. Task events were marked using triggers corresponding to famous, unfamiliar, and scrambled faces under initial, immediate repeat, and delayed repeat presentation conditions, recorded in both MEG and fMRI event files. T1-weighted MPRAGE structural images were defaced by the submitters. Quality control was performed using MRIQC.",
+  "description": "A multi-subject, multi-modal neuroimaging dataset on face processing, combining structural MRI, functional MRI, MEG and EEG from the same participants. Participants viewed famous, unfamiliar and scrambled faces, with initial, immediate-repeat and delayed-repeat presentations. This BIDS release is a 16-subject subset of the original 19-subject study, intended for multimodal integration and methods development.",
+  "methods_description": "Participants performed a face recognition task with famous, unfamiliar and scrambled faces. Data were acquired with simultaneous MEG and EEG, with three anatomical fiducials digitized for MEG-MRI alignment. Structural MPRAGE T1 images (defaced) and functional MRI runs were also collected. MRIQC quality control outputs are included.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -12,27 +12,27 @@
   },
   "keywords": [
     {
-      "term": "EEG"
+      "term": "MEG"
     },
     {
-      "term": "MEG"
+      "term": "EEG"
     },
     {
       "term": "fMRI"
     },
     {
+      "term": "structural MRI"
+    },
+    {
       "term": "face processing"
     },
     {
-      "term": "Facial Recognition",
+      "term": "multimodal integration"
+    },
+    {
+      "term": "Face",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000066499"
-    },
-    {
-      "term": "multimodal neuroimaging"
-    },
-    {
-      "term": "BIDS"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005145"
     }
   ],
   "related_identifiers": [
@@ -76,7 +76,7 @@
     "func"
   ],
   "sizes": [
-    "181.9 GB (1988 files)"
+    "169 GB (1988 files)"
   ],
   "formats": [
     ".annot",
