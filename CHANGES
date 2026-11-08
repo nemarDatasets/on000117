@@ -1,3 +1,13 @@
+1.0.1 2026-11-08
+  - NEMAR on000117 (mirror of OpenNeuro ds000117 1.1.0): channels.tsv rows now match the channels in each MEG
+    recording (nemarDatasets/on000117#1, item 2). Rows follow the FIF channel order; kept rows are unchanged.
+    - sub-01 to sub-16 (session-level files, used by runs 01-06): 404 -> 395 rows; CHPI001-CHPI009 removed.
+    - sub-emptyroom: sub-emptyroom_task-noise_channels.tsv (subject level, 404 rows) replaced by one
+      session-level file per session, 325 rows (ses-20090409, 20090506, 20090515, 20090518) or 321 rows
+      (ses-20090511, 20090601, 20091126, 20091208). Removed EEG001-EEG074 and CHPI001-CHPI009; added
+      MISC001-MISC004 (in the four 325-channel recordings).
+    - Data files are unchanged.
+  - dataset_description.json: Version 1.0.0 -> 1.0.1.
 1.1.0 2025-01-06
   - Reconverted MRI data from DICOM with Heudiconv
 1.0.6 2024-04-22
