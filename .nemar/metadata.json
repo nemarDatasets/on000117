@@ -2,13 +2,14 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Multisubject, multimodal face processing",
-  "description": "A multi-subject, multi-modal neuroimaging dataset on face processing, combining structural MRI, functional MRI, MEG and EEG from the same participants. Participants viewed famous, unfamiliar and scrambled faces, with initial, immediate-repeat and delayed-repeat presentations. This BIDS release is a 16-subject subset of the original 19-subject study, intended for multimodal integration and methods development.",
-  "methods_description": "Participants performed a face recognition task with famous, unfamiliar and scrambled faces. Data were acquired with simultaneous MEG and EEG, with three anatomical fiducials digitized for MEG-MRI alignment. Structural MPRAGE T1 images (defaced) and functional MRI runs were also collected. MRIQC quality control outputs are included.",
+  "description": "A multi-subject, multi-modal neuroimaging dataset on face processing, combining structural MRI, fMRI, MEG and EEG from 16 healthy young volunteers. Participants viewed famous, unfamiliar and scrambled faces, presented initially or repeated immediately or after a delay, in a 3x3 design. They made a symmetry judgement on each stimulus. The dataset is a BIDS-formatted subset of the original Wakeman & Henson collection and supports multimodal integration and repetition-effect research.",
+  "methods_description": "Each of 16 participants was scanned once in MRI (structural and functional) and once in MEG with simultaneous EEG. In the task, participants judged whether each face or scrambled-face stimulus was more or less symmetrical around a vertical midline and responded with a button press. Three anatomical fiducials were digitized for MEG-MRI alignment, and empty-room MEG recordings were acquired across 7 sessions. The first two dummy fMRI volumes were removed, and T1 images were defaced with FSL.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
     "Wakeman, DG": {},
-    "Henson, RN": {}
+    "Henson, RN": {},
+    "Apšvalka, D": {}
   },
   "keywords": [
     {
@@ -21,18 +22,18 @@
       "term": "fMRI"
     },
     {
-      "term": "structural MRI"
+      "term": "face processing"
     },
     {
-      "term": "face processing"
+      "term": "repetition priming"
     },
     {
       "term": "multimodal integration"
     },
     {
-      "term": "Face",
+      "term": "Magnetic Resonance Imaging",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005145"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008279"
     }
   ],
   "related_identifiers": [
@@ -47,14 +48,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "10.18112/openneuro.ds000117.v1.1.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsDerivedFrom"
-    },
-    {
       "identifier": "https://nemar.org/dataset/on000117",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds000117.v2.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -66,38 +67,27 @@
       "funder_name": "Elekta Ltd."
     }
   ],
-  "resource_type_specific": "Neuroimaging Dataset",
+  "resource_type_specific": "MEG Dataset",
   "modalities": [
-    "beh",
     "meg",
     "anat",
-    "dwi",
     "fmap",
     "func"
   ],
   "sizes": [
-    "169 GB (1988 files)"
+    "253 GB (2299 files)"
   ],
   "formats": [
-    ".annot",
     ".bmp",
-    ".bval",
-    ".bvec",
     ".dat",
-    ".f3h5wZ",
+    ".db",
     ".fif",
     ".gz",
     ".json",
+    ".jsonl",
     ".md",
-    ".mgz",
-    ".nii",
-    ".pial",
-    ".pos",
-    ".reg",
     ".tsv",
-    ".txt",
-    ".white",
     ".yml"
   ],
-  "source_hash": "89761ac4bb624d195715367c8571edf1b19c35362372be0ba8e7a7f8e870d7e0"
+  "source_hash": "ddda9ee96a162b63e9d51109c499c26371eb49696125203c6e94c690f3dcf5a9"
 }
